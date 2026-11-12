@@ -1,3 +1,4 @@
+-   fourier 0.1.0: Version 0.1.0 - 1st submission
 -   fourier 0.1.0.9016: Jonathan's last review for V1, only lack "Data availability"
 -   fourier 0.1.0.9015: update SI and refs, + cover letter and supplementary note online
 -   fourier 0.1.0.9014: Supplementary note qmd from Erwan's tex

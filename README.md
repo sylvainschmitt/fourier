@@ -1,17 +1,6 @@
 # Fourier
-Sylvain Schmitt
-Sep 8, 2026
 
-<div>
-
-[![](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
-
-</div>
-
-The general idea is to test the development of
-[`microclimr`](https://github.com/sylvainschmitt/microclimr) by
-reproducing analyses of the IMRPINT project on the forest microclimate
-from the Mormal, Blois and Aigoual forests.
+Manuscript submitted to *Methods in Ecology and Evolution* on the 12/11/26.
 
 ## Usage
 
@@ -27,7 +16,7 @@ and associated environment defined with [renv](#0).
   figures:
   - Manuscript: `index.qmd` and associated html
   - Supplementary note: `supplementary_note.qmd` and associated html
-    Cover letter: `cover_letter.qmd` and associated html
+  - Cover letter: `cover_letter.qmd` and associated html
 - All data in `data/`
 - All figures in `figs/`
 - R environment definition with
@@ -35,7 +24,7 @@ and associated environment defined with [renv](#0).
   and `renv/lock`
 - R files (`.Rbuildignore` , `.Rdata` , `.Rprofile` , `.Rhistory`)
 - Git and GitHub files (`.gitignore`)
-- Project documentation (`README.qmd` , `README.md` , `NEWS.md` ,
+- Project documentation (`README.md` , `NEWS.md` ,
   `LICENSE`)
 
 ## Poeple

@@ -1,0 +1,181 @@
+site	idplot	forest	coordxl93	coordyl93	longwgs84	latwgs84	elevation	topography	slope	aspectgra	northness	nnessslop	twi	standstru	standstag	dendropro	woodydebr	rocks	sylvicultu	forestedg	waterdist	ph
+Aigoual	30_01	Aigoual	745227.3973	6336367.689	3.565132	44.124857	1469.6	mid slope	22.1	351.9	0.7	16.1	3.2	regular	young stand	relascope	7	0	0	412.9	109.7	4.382
+Aigoual	30_02	Aigoual	743303.1648	6335132.943	3.540983	44.113866	1404.7	mid slope	23.1	262.6	-0.6	-12.8	5.4	regular	adult stand	relascope	19	0	0	504.1	334.1	4.529
+Aigoual	30_06	Aigoual	743744.8054	6334239.12	3.546423	44.105794	1345.3	summit	26.5	131.2	-0.5	-12.5	3.7	coppice	coppice	relascope	3	0	0	345.8	40	5.047
+Aigoual	30_07	Aigoual	744660.766	6334873.675	3.55792	44.111447	1311.8	mid slope	20.2	270.2	-0.5	-9.1	4	regular	pole stand	relascope	1	0	0	662.8	130.2	4.976
+Aigoual	30_10	Aigoual	741744.7935	6335750.431	3.521566	44.119518	1433	mid slope	20.7	227.1	-0.9	-18.9	6	regular	adult stand	relascope	10	0	0	1443.2	267.3	4.811
+Aigoual	30_13	Aigoual	742207.8422	6335747.959	3.527351	44.119468	1436.8	mid slope	20.1	143.9	-0.6	-12.8	5.3	regular	pole stand	relascope	6	0	0	1749.5	308.6	4.87
+Aigoual	30_14	Aigoual	742476.3195	6336051.401	3.530731	44.122183	1472.5	level area	4.6	187.1	-1	-4.5	6.3	coppice	coppice	relascope	5	0	0	1681.5	189.3	4.336
+Aigoual	30_16	Aigoual	743275.9316	6336332.4	3.540745	44.124663	1331.3	mid slope	31	113.3	-0.2	-6.4	2.1	regular	pole stand	relascope	8	4	0	1238.5	443.2	5.072
+Aigoual	30_23	Aigoual	744442.8509	6337085.932	3.555392	44.131372	1372.1	mid slope	19.9	269.6	-0.5	-9.2	5.1	regular	pole stand	relascope	2	0	0	727.9	252.8	4.638
+Aigoual	30_25	Aigoual	744269.7038	6337076.471	3.553228	44.131298	1307.2	mid slope	25.6	309.9	0.2	4	4.7	regular	young stand	relascope	40	0	0	861.6	134.3	4.883
+Aigoual	30_26	Aigoual	744185.1919	6337470.267	3.552206	44.134847	1330.4	mid slope	20.7	134.5	-0.5	-10.7	5.5	regular	old stand	relascope	14	15	0	767.4	163	4.86
+Aigoual	30_29	Aigoual	743970.4512	6337312.557	3.549508	44.133441	1350.6	mid slope	29	166.5	-0.9	-25.1	6.1	irregular	irregular	relascope	1	10	0	1015.5	225.5	4.57
+Aigoual	30_30	Aigoual	743299.8534	6334217.182	3.540863	44.105624	1315.8	mid slope	21.9	254	-0.7	-14.5	5.5	regular	young stand	relascope	18	0	0	435.1	177.7	5.134
+Aigoual	30_04	Aigoual	743387.3109	6334024.42	3.541939	44.103883	1312.7	mid slope	12.9	184.3	-1	-12.5	4.5	open	open	relascope	17	0	0	566.8	234.4	5.628
+Aigoual	30_05	Aigoual	742545.203	6333924.157	3.531412	44.103033	1252.3	ravine	23	328.5	0.4	10	4.7	regular	adult stand	relascope	9	20	0	1196.1	270.2	5.628
+Aigoual	30_08	Aigoual	744717.4738	6334469.025	3.558593	44.107802	1306.4	mid slope	16.7	295.2	-0.1	-1.3	2.8	regular	young stand	relascope	5	0	0	964.4	317.1	4.546
+Aigoual	30_09	Aigoual	742463.8761	6335781.683	3.530553	44.119756	1416.4	mid slope	23.7	79.8	0.3	7.4	4.9	isolated trees	seed trees	relascope	3	0	0	1538.6	22.2	4.801
+Aigoual	30_11	Aigoual	741600.5295	6336018.933	3.519786	44.121943	1459.6	up slope	10.6	330.3	0.5	4.9	4.4	coppice	coppice	relascope	8	7	0	1440.7	36.7	4.664
+Aigoual	30_12	Aigoual	741669.1054	6335754.435	3.520621	44.119558	1425.2	mid slope	14.7	178.4	-0.9	-13.9	5.8	regular	young stand	relascope	5	0	0	1374.7	131.4	4.95
+Aigoual	30_15	Aigoual	741983.814	6336534.213	3.524617	44.126558	1372.9	mid slope	19.4	231.3	-0.9	-17.1	6.1	regular	thicket	stem counting	4	3	0	2057.2	133.5	5.072
+Aigoual	30_17	Aigoual	742770.2904	6336652.924	3.534454	44.127579	1291.1	level area	20.7	330.2	0.5	9.4	6	regular	old stand	relascope	18	57	0	1824.6	11.1	4.705
+Aigoual	30_18	Aigoual	742711.2573	6336726.345	3.533723	44.128243	1294.1	mid slope	21.5	107.7	-0.1	-2.6	7.8	regular	old stand	relascope	8	25	0	1917.6	66.9	5.555
+Aigoual	30_19	Aigoual	744315.7323	6336633.986	3.553764	44.127312	1356.9	mid slope	37	348.9	0.7	25.7	4	regular	old stand	relascope	0	70	0	955.5	189.1	4.909
+Aigoual	30_20	Aigoual	744210.7386	6336689.766	3.552457	44.127821	1306.1	mid slope	29.7	335.3	0.5	15.6	6	regular	adult stand	relascope	17	80	0	1052.6	138.6	5.374
+Aigoual	30_21	Aigoual	744764.4711	6336904.184	3.559395	44.129716	1376.8	mid slope	22.9	254.6	-0.7	-15	3.9	coppice	coppice	stem counting	15	7	0	608.6	134.5	4.706
+Aigoual	30_22	Aigoual	744827.8302	6336792.868	3.560177	44.12871	1342.5	down slope	34.9	186.8	-1	-34.1	5	regular	old stand	relascope	3	50	0	662.2	12.4	5.695
+Aigoual	30_24	Aigoual	744402.2918	6336956.083	3.554874	44.130206	1332.3	mid slope	22.1	193.5	-1	-22	4.8	isolated trees	seed trees	relascope	5	0	0	841.9	140.7	5.159
+Aigoual	30_27	Aigoual	743963.5609	6337485.034	3.549437	44.134994	1376	up slope	15.9	320.7	0.3	5.1	5.1	regular	adult stand	relascope	4	0.5	0	983.3	330.9	4.034
+Aigoual	30_28	Aigoual	743844.4705	6337331.931	3.547936	44.133624	1362.5	up slope	14.9	228.8	-0.9	-13.4	5.1	regular	old stand	relascope	11	4	0	1130.9	311.8	4.581
+Aigoual	30_31	Aigoual	738644.1077	6337147.885	3.482933	44.132273	1112.8	mid slope	22.8	44	0.8	17.6	4.1	regular	adult stand	relascope	3	65	0	958.3	42.5	4.994
+Aigoual	30_42	Aigoual	742975.2737	6334911.933	3.536868	44.111897	1403.6	summit	2.5	329	0.4	1.1	5.4	regular	young stand	relascope	15	0	0	661.6	212.3	4.459
+Aigoual	30_44	Aigoual	742992.0261	6335757.404	3.537149	44.119505	1401.8	ravine	14.9	215	-1	-14.5	7.5	regular	young stand	relascope	11	3	0	1098.7	185.8	5.211
+Aigoual	30_47	Aigoual	741919.7719	6338682.783	3.523995	44.145899	1001.6	mid slope	35.7	119.6	-0.3	-10.8	3.3	coppice	coppice	relascope	2	70	0	280	64.9	4.853
+Aigoual	30_48	Aigoual	742068.1602	6338142.97	3.525805	44.141032	1110.1	mid slope	30.4	103	0	-1.4	4.6	coppice	coppice	relascope	6	10	0	759.3	269.2	5.309
+Aigoual	30_51	Aigoual	741768.005	6337602.684	3.522009	44.136187	1333.8	mid slope	23.4	66.5	0.5	11.8	6.6	regular	saplings	relascope	2	15	0	1356	202.3	4.777
+Aigoual	30_53	Aigoual	742179.9335	6337410.491	3.527141	44.134433	1225.6	mid slope	19.9	26.7	0.9	18.1	6.7	regular	saplings	relascope	8	17	0	1459.9	242.8	5.521
+Aigoual	30_54	Aigoual	741487.3464	6338054.677	3.518538	44.140272	1254.3	mid slope	29.2	56.7	0.6	18.4	5.5	regular	saplings	relascope	55	5	0	1041.5	216.5	4.343
+Aigoual	30_55	Aigoual	742690.135	6337685.629	3.53354	44.136878	1140.8	mid slope	23.2	49.3	0.7	16.6	6.7	regular	pole stand	relascope	15	10	0	1241.6	239.3	4.916
+Aigoual	30_56	Aigoual	742389.8813	6337777.605	3.529795	44.137724	1116.2	mid slope	23.3	343.5	0.6	14.7	8.1	regular	adult stand	relascope	20	25	0	1091.1	170.7	4.796
+Aigoual	30_57	Aigoual	742745.3504	6337218.896	3.534191	44.132674	1260.5	mid slope	33.1	72.8	0.4	13.7	4.7	isolated trees	isolated trees	relascope	40	95	0	1704.8	277	4.473
+Aigoual	30_58	Aigoual	742870.477	6336715.77	3.535712	44.128138	1291.6	mid slope	28.1	321.8	0.3	9.5	5.5	regular	pole stand	relascope	2	18	0	1795.8	81.4	4.952
+Aigoual	30_59	Aigoual	744816.1985	6337455.882	3.56009	44.134678	1459.3	mid slope	20.7	257.8	-0.6	-12.8	6	regular	pole stand	relascope	10	10	0	203.5	213.8	4.473
+Aigoual	30_33	Aigoual	739836.9227	6337438.255	3.497862	44.134819	1272.9	mid slope	29.6	75.7	0.4	11	6.9	regular	thicket	stem counting	2	0	0	1689.6	329.2	5.443
+Aigoual	30_34	Aigoual	739909.4884	6337188.31	3.498749	44.132566	1278	mid slope	28.5	70.1	0.5	12.9	4	irregular	irregular	relascope	25	80	0	1517	259.1	5.486
+Aigoual	30_35	Aigoual	739703.2913	6337471.311	3.496195	44.135125	1307	up slope	19.8	352.4	0.7	14.5	6.4	regular	adult stand	relascope	2	0	0	1636.6	316.1	4.372
+Aigoual	30_36	Aigoual	739407.9352	6337826.421	3.492531	44.138337	1114.9	mid slope	27	305	0.1	2.1	5.5	coppice	coppice	relascope	2	14	0	1767.3	137.8	4.981
+Aigoual	30_37	Aigoual	742409.0455	6334765.015	3.529782	44.110609	1223.1	down slope	29.1	131.4	-0.5	-13.8	6.3	irregular	irregular	relascope	15	25	0	1156.9	1.9	4.819
+Aigoual	30_38	Aigoual	742393.9942	6334866.823	3.529603	44.111526	1256.1	up slope	20.9	113.9	-0.2	-4.5	3.7	regular	thicket	stem counting	15	3	0	1192.7	37.8	5.105
+Aigoual	30_39	Aigoual	742319.9701	6335095.733	3.528697	44.113591	1304.7	mid slope	21.2	68.1	0.5	10.2	2.6	regular	saplings	relascope	4	0	0	1334.5	142.9	4.746
+Aigoual	30_40	Aigoual	743169.3452	6334607.612	3.539266	44.109146	1333.6	down slope	22.4	280.9	-0.3	-6.6	6.4	regular	adult stand	relascope	30	20	0	382.2	15.4	4.331
+Aigoual	30_41	Aigoual	743208.3153	6335031.479	3.539789	44.112958	1365.9	level area	14.5	244.2	-0.8	-11.1	5.9	regular	adult stand	relascope	4	0	15	536	39.1	4.945
+Aigoual	30_43	Aigoual	742982.1083	6335587.039	3.537011	44.117972	1382.7	mid slope	18.4	316.2	0.3	4.6	6	regular	thicket	stem counting	10	0.5	0	997.7	223.1	4.889
+Aigoual	30_45	Aigoual	741279.1409	6338298.226	3.515956	44.142476	1244.4	mid slope	34.8	83	0.3	9.2	4.2	coppice	coppice	relascope	3	40	0	987.3	218.6	4.8
+Aigoual	30_46	Aigoual	741961.4743	6338798.178	3.524526	44.146936	956.8	down slope	38.9	43.5	0.8	30.2	4.5	coppice	coppice	relascope	8	23	0	159.8	30.8	5.184
+Aigoual	30_49	Aigoual	741513.1339	6338836.281	3.518925	44.147305	1118.7	mid slope	28.7	15.1	1	27.8	5.4	regular	thicket	stem counting	8	1	0	465.4	304	5.222
+Aigoual	30_50	Aigoual	742083.463	6337543.829	3.525946	44.135639	1253.2	mid slope	19	39.7	0.8	15.4	6.5	regular	pole stand	relascope	5	4	0	1339.4	91.8	4.855
+Aigoual	30_52	Aigoual	741912.1103	6337536.24	3.523804	44.135581	1292.8	mid slope	28	67.6	0.5	13.6	2.2	regular	adult stand	relascope	3	13	0	1385.2	47.7	4.852
+Aigoual	30_60	Aigoual	744680.2886	6337747.326	3.558418	44.13731	1461.8	mid slope	19.2	183.7	-1	-18.6	5.4	regular	young stand	relascope	2	1	0	284	105.7	4.591
+Aigoual	30_03	Aigoual	744917.7719	6336128.189	3.561242	44.122722	1461.4	mid slope	11	234.5	-0.9	-9.4	5	isolated trees	isolated trees	relascope	10	0	0	413.6	330.1	4.436
+Aigoual	30_32	Aigoual	739769.7658	6337628.58	3.497038	44.136536	1232.8	mid slope	29.7	4	1	29.7	4.9	irregular	irregular	relascope	9	45	0	1804.3	389.3	4.675
+Blois	41_01	Blois	566309.9232	6719748.231	1.221874	47.564561	117.2	plateau	1.3	173.7	-0.9	-1.2	7.9	regular	pole stand	relascope	4	0	20	155.3	719.2	4.523
+Blois	41_02	Blois	566593.1372	6719796.931	1.225625	47.565056	121.6	plateau	1.2	234.5	-0.9	-1.1	5.4	regular	pole stand	relascope	2	0	0	220.6	874.2	4.45
+Blois	41_03	Blois	566847.8808	6719921.712	1.228975	47.566231	126.7	plateau	0.5	198.4	-1	-0.5	6.4	regular	adult stand	relascope	1	0	0	305.8	1090.6	5.335
+Blois	41_04	Blois	567814.9834	6720138.746	1.24177	47.568378	126.1	plateau	0.6	135	-0.5	-0.3	12	regular	adult stand	relascope	17	0	0	463.2	1403.8	5.021
+Blois	41_05	Blois	568543.1252	6723786.25	1.250377	47.601348	111.7	plateau	1.8	71.6	0.4	0.8	8.2	regular	adult stand	relascope	4	0	10	489.6	149.4	4.767
+Blois	41_07	Blois	568365.7269	6724267.176	1.247874	47.60564	105.6	plateau	4.6	180	-1	-4.4	8.5	regular	thicket	stem counting	3	0	25	395.9	75.6	7.111
+Blois	41_08	Blois	568458.3276	6724425.481	1.24906	47.607083	110.6	plateau	1.3	63.4	0.5	0.7	5.4	regular	adult stand	relascope	4	0	5	247.2	242.9	4.845
+Blois	41_09	Blois	568271.948	6722294.318	1.247209	47.587868	140.3	plateau	1	81.9	0.3	0.3	7.3	regular	old stand	relascope	10	0	10	1611	416.3	5.181
+Blois	41_10	Blois	568287.0306	6722710.076	1.247287	47.591612	133.3	gentle slope	3.1	30.1	0.9	2.8	8	regular	adult stand	relascope	12	0	28	1328.2	474.5	5.406
+Blois	41_11	Blois	567020.6074	6722648.416	1.230459	47.590803	141.2	plateau	0	-1	1	0	9.9	regular	old stand	relascope	15	0	12	531.8	328.7	5.321
+Blois	41_12	Blois	567475.6921	6721960.26	1.236717	47.584702	137	plateau	1.3	186.3	-1	-1.3	8.7	regular	young stand	relascope	10	0	5	1008	1011.4	5.029
+Blois	41_13	Blois	567527.7026	6721750.792	1.237471	47.582827	137.7	plateau	1.1	0	1	1.1	8.6	regular	young stand	relascope	2	0	0	960.1	1227.1	5.482
+Blois	41_14	Blois	567400.3011	6721195.716	1.235942	47.577807	137.7	plateau	0.5	161.6	-0.8	-0.4	9.5	regular	thicket	stem counting	7	0	35	609.9	1442.5	4.909
+Blois	41_15	Blois	571317.363	6721875.123	1.28784	47.584697	110.9	gentle slope	3.2	135	-0.5	-1.7	7.2	regular	young stand	relascope	5	0	0	119.9	202.8	5.03
+Blois	41_21	Blois	570634.9174	6721772.145	1.278793	47.583637	121.5	plateau	0.8	149	-0.7	-0.6	5.8	regular	pole stand	relascope	7	0	7	402.4	420.6	5.287
+Blois	41_22	Blois	570204.5464	6721967.659	1.273012	47.585311	123.6	plateau	0.5	18.4	1	0.4	8.4	regular	pole stand	relascope	6	0	15	511.4	601.2	4.738
+Blois	41_23	Blois	570066.87	6721651.51	1.271272	47.582439	121.9	plateau	0.6	116.6	-0.3	-0.2	13.8	regular	pole stand	relascope	11	0	25	820.7	709.9	4.957
+Blois	41_24	Blois	568963.8087	6722572.054	1.256331	47.590505	126.4	plateau	0.9	71.6	0.4	0.4	5.8	regular	young stand	relascope	3	0	25	969.4	139.3	5.346
+Blois	41_25	Blois	568891.0623	6722213.402	1.255469	47.587263	131.6	plateau	2	111	-0.2	-0.3	5	regular	adult stand	relascope	15	0	5	1321.8	141.1	4.847
+Blois	41_26	Blois	569122.2878	6722207.694	1.258546	47.587258	125.8	plateau	1.3	26.6	0.9	1.2	5.4	regular	adult stand	relascope	7	0	15	1198.1	183.2	4.709
+Blois	41_27	Blois	569795.02	6717355.06	1.26891	47.543721	107.7	plateau	0.8	135	-0.5	-0.4	5.9	regular	thicket	stem counting	2	0	40	141.4	446	5.222
+Blois	41_28	Blois	569361.81	6717316.97	1.263163	47.543293	100.4	plateau	1.5	150.9	-0.7	-1.1	5.3	regular	saplings	stem counting	17	0	35	573	135.8	5.121
+Blois	41_29	Blois	569266.18	6716728.56	1.262064	47.537979	95.9	plateau	2.5	125.5	-0.4	-1	9.1	regular	saplings	stem counting	4	0	60	168.1	240	5.043
+Blois	41_31	Blois	569725.71	6716822.01	1.268144	47.53891	95	plateau	2.1	146.3	-0.7	-1.4	7.8	regular	pole stand	relascope	6	0	25	86	209.3	5.044
+Blois	41_32	Blois	569573.42	6716831.42	1.266117	47.538965	95.9	plateau	4.6	237.8	-0.8	-3.8	6.5	regular	pole stand	relascope	5	0	55	198.9	66.8	4.864
+Blois	41_33	Blois	569110.31	6717374.26	1.259804	47.543758	101.4	plateau	1.5	78.7	0.3	0.5	8.9	regular	pole stand	relascope	3	0	2	713.3	90.2	5.1
+Blois	41_16	Blois	571506.2573	6721745.235	1.29039	47.583565	113.2	plateau	2.4	65	0.5	1.2	6.7	regular	thicket	stem counting	3	0	26	80.9	234.3	5.22
+Blois	41_17	Blois	571482.8591	6721600.623	1.290121	47.582259	115.2	plateau	1	45	0.8	0.8	5.6	isolated trees	seed trees	relascope	3	0	80	223.6	380.8	4.552
+Blois	41_18	Blois	570863.4912	6721967.373	1.281776	47.585438	121.7	plateau	0.6	225	-0.9	-0.6	6.2	regular	thicket	open	2	0	50	173.2	179.1	5.241
+Blois	41_19	Blois	570945.108	6721747.47	1.282926	47.583475	116.9	plateau	1.1	180	-1	-1.1	10.3	regular	thicket	open	2	0	60	388.6	409.2	5.197
+Blois	41_20	Blois	570849.5385	6721515.137	1.281722	47.581366	116.2	gentle slope	2.8	345.3	0.7	1.8	4.6	isolated trees	seed trees	relascope	3	0	65	620.6	628.8	4.863
+Blois	41_30	Blois	569215.77	6716534.49	1.261451	47.536222	93.6	plateau	1.4	135	-0.5	-0.7	6.9	regular	thicket	open	4	0	40	45.6	293.6	5.743
+Blois	41_34	Blois	569788.86	6717072.17	1.26891	47.541174	103.4	plateau	3.1	158.2	-0.8	-2.4	7.5	regular	pole stand	relascope	4	0	15	201.1	326.4	5.274
+Blois	41_35	Blois	569626.7	6717142.69	1.266735	47.541777	107.2	plateau	1.3	186.3	-1	-1.3	7	regular	saplings	stem counting	35	0	40	358.8	199.2	4.731
+Blois	41_36	Blois	569739.82	6718757.4	1.267767	47.55633	116.3	plateau	0.6	225	-0.9	-0.6	7.3	regular	adult stand	relascope	6	0	20	1102.8	252.6	5.131
+Blois	41_39	Blois	569448.23	6723497.45	1.262504	47.598929	114.3	gentle slope	1.8	135	-0.5	-1	6.4	open	open	open	7	0	0	33.1	281.2	6.405
+Blois	41_40	Blois	569012.25	6721287.1	1.257352	47.578951000000004	133.5	plateau	0.3	180	-1	-0.3	9	regular	adult stand	relascope	4	0	20	1883.8	547.7	4.765
+Blois	41_41	Blois	568730.24	6720708.91	1.253772	47.573692	127.9	plateau	1.3	153.4	-0.7	-1	5.4	regular	adult stand	relascope	8	0	15	1523.7	1137.8	4.81
+Blois	41_42	Blois	569070.62	6720122.2	1.258471	47.56848	125.8	plateau	0.2	135	-0.5	-0.1	7.3	regular	adult stand	relascope	3	0	20	1553.9	1001.9	5.049
+Blois	41_43	Blois	568300.79	6719929.71	1.248291	47.566594	118.7	mid slope	4	270	-0.5	-1.8	6.8	regular	young stand	relascope	2	0	0	764.2	1097.8	4.015
+Blois	41_44	Blois	568530.09	6719927.83	1.25134	47.566623	126.2	plateau	1	236.3	-0.8	-0.9	5.6	regular	adult stand	relascope	12	0	2	980	1050.1	4.536
+Blois	41_45	Blois	568401.25	6719630.21	1.249715	47.563919	121.8	plateau	1	261.9	-0.6	-0.6	6.3	regular	adult stand	relascope	11	0	3	797.4	801.2	4.493
+Blois	41_47	Blois	571272.79	6721163.77	1.287453	47.578287	117.7	plateau	0.6	26.6	0.9	0.6	10.2	regular	thicket	relascope	5	0	40	603.9	856.5	4.354
+Blois	41_48	Blois	571267.82	6721035.35	1.287423	47.57713	118.7	plateau	1	56.3	0.6	0.7	7.8	regular	thicket	stem counting	8	0	37	475.5	980.6	4.601
+Blois	41_49	Blois	571414.24	6720850.58	1.289424	47.575496	118.1	plateau	0.6	296.6	-0.1	0	10.3	regular	thicket	stem counting	10	0	35	334.9	1123.7	4.646
+Blois	41_51	Blois	572171.23	6721068.28	1.299429	47.577602	119.3	plateau	0.5	288.4	-0.2	-0.1	7.1	open	open	open	3	0	90	47.7	867.9	5.445
+Blois	41_53	Blois	571772.31	6720904.72	1.29417	47.576053	120.3	plateau	0.5	288.4	-0.2	-0.1	7.5	regular	old stand	relascope	4	0	15	266.1	981.1	4.298
+Blois	41_57	Blois	570527.07	6720298.8	1.277786	47.570357	125.7	plateau	0.4	225	-0.9	-0.4	9.7	regular	saplings	relascope	8	0	15	635.5	396.4	4.624
+Blois	41_58	Blois	570197.52	6719942.92	1.273507	47.567089	119.9	plateau	0.8	225	-0.9	-0.7	5.9	regular	saplings	stem counting	10	0	40	883.4	209	4.402
+Blois	41_60	Blois	570283.05	6719678.13	1.274721	47.564723	117.6	plateau	1.1	270	-0.5	-0.5	8.1	regular	young stand	relascope	8	0	20	683	34.4	4.328
+Blois	41_38	Blois	569931.87	6718577.81	1.270372	47.554752	105.7	slight depression	0.6	180	-1	-0.5	13.8	regular	adult stand	relascope	5	0	15	859.8	0.8	5.442
+Blois	41_46	Blois	568612.38	6720677.58	1.252214	47.573387	127.8	plateau	1	188.1	-1	-1	5.6	regular	adult stand	relascope	5	0	0	1412	1194.6	4.358
+Blois	41_50	Blois	571837.88	6721153.38	1.294971	47.578303	119.3	plateau	0.6	333.4	0.5	0.3	10.7	regular	old stand	relascope	3	0	0	165.6	728.9	4.333
+Blois	41_54	Blois	568906.92	6718991.14	1.256626	47.558269	114.5	plateau	0.8	135	-0.5	-0.4	5.9	regular	adult stand	relascope	3	0	0	1118.7	316.7	4.883
+Blois	41_55	Blois	568729.68	6718720.03	1.254349	47.555794	115.7	plateau	0.7	168.7	-0.9	-0.6	8.1	regular	adult stand	relascope	0	0	40	865.1	413.2	4.736
+Blois	41_56	Blois	568686.96	6719174.21	1.253648	47.559872	116.2	plateau	0.2	135	-0.5	-0.1	9.6	regular	adult stand	relascope	9	0	40	925.2	495.3	4.832
+Blois	41_59	Blois	569672.63	6719922.57	1.266534	47.566803	123.2	plateau	0.6	153.4	-0.7	-0.5	11.5	regular	old stand	relascope	2	0	30	1340.4	614.8	5.14
+Blois	41_06	Blois	568461.1762	6724004.781	1.249222	47.603298	108.6	plateau	2.6	26.6	0.9	2.3	6.3	regular	saplings	relascope	2	0	53	421.6	98.4	4.982
+Blois	41_37	Blois	569945.39	6718470.82	1.270583	47.553792	113.1	up slope	7.8	285.8	-0.2	-1.7	7.1	regular	young stand	relascope	10	0	0	772.4	60.3	4.784
+Blois	41_52	Blois	572087.17	6721024.52	1.298323	47.577192	119.9	plateau	0.8	45	0.8	0.6	7.8	regular	saplings	stem counting	2	0	45	107.3	885.1	4.352
+Mormal	59_04	Mormal	754146.9683	7018754.791	3.758481	50.264384	156.7	plateau	0.5	0	1	0.5	7.1	regular	old stand	relascope	10	0	60	189.6	65.9	4.505
+Mormal	59_01	Mormal	753278.9349	7017293.377	3.746129	50.251337	153.8	plateau	3.6	304.7	0.1	0.3	6.7	regular	adult stand	relascope	7	0	20	799.3	421.9	4.29
+Mormal	59_02	Mormal	753786.3885	7018007.088	3.75333	50.257702	146.7	slight depression	0.7	231.9	-0.9	-0.6	8.8	regular	young stand	relascope	0	0	0	912.7	4.7	5.566
+Mormal	59_03	Mormal	753748.346	7018751.076	3.752897	50.264385	156	plateau	3.6	316.6	0.3	0.9	4.4	regular	old stand	relascope	4	0	60	384.5	393.8	4.413
+Mormal	59_05	Mormal	751780.4115	7015973.133	3.724974	50.239608	150.7	plateau	0.7	17.6	1	0.6	6.1	regular	young stand	relascope	17	0	0	592.3	263.7	5.67
+Mormal	59_06	Mormal	749972.0005	7014886.885	3.699522	50.230001	148.4	plateau	2	284.5	-0.2	-0.5	7.5	isolated trees	isolated trees	open	8	0	0	147.9	198.7	4.329
+Mormal	59_08	Mormal	753908.8401	7008348.157	3.753754	50.170963	148.7	plateau	2	136.2	-0.5	-1.1	8	regular	adult stand	relascope	2	0	0	644.1	109.7	5.075
+Mormal	59_10	Mormal	755172.3192	7010518.553	3.771715	50.190342	170.3	plateau	1.1	136	-0.5	-0.6	6.2	irregular	irregular	relascope	3	0	90	926.7	161.2	4.324
+Mormal	59_11	Mormal	754479.9417	7010181.61	3.761986	50.187377	164.5	plateau	2.1	215.9	-1	-2	9	open	open	open	4	0	60	1029.3	205.4	5.023
+Mormal	59_17	Mormal	749883.7824	7007761.878	3.697406	50.16603	159.8	plateau	2.1	324.8	0.4	0.8	9.2	regular	young stand	relascope	8	0	55	1694	83.4	4.442
+Mormal	59_24	Mormal	749923.9564	7009453.372	3.698177	50.181216	159	gentle slope	1.4	3	1	1.4	8.2	regular	adult stand	relascope	15	0	0	1781.1	259.5	4.612
+Mormal	59_25	Mormal	750492.1718	7009258.755	3.706098	50.179423	157.4	plateau	2.8	202.9	-1	-2.8	4.6	regular	adult stand	relascope	7	0	0	1428.6	246.7	4.381
+Mormal	59_35	Mormal	756526.6012	7017765.987	3.791673	50.255297	161	plateau	0.4	274.1	-0.4	-0.2	6.6	regular	pole stand	relascope	10	0	15	271.4	341.3	4.623
+Mormal	59_09	Mormal	753342.7899	7007807.468	3.745768	50.166156	143.1	plateau	3.7	248.2	-0.7	-2.7	7.2	regular	old stand	relascope	6	0	0	106.2	168.9	4.551
+Mormal	59_12	Mormal	754364.66	7010344.933	3.760395	50.188854	167.1	plateau	0.6	17.6	1	0.6	8.2	regular	pole stand	relascope	2	0	20	346.4	110.6	4.663
+Mormal	59_13	Mormal	752150.0198	7009187.482	3.729272	50.178648	161.2	gentle slope	2.1	184	-1	-2	9.6	isolated trees	isolated trees	relascope	4	0	75	682.9	70.3	5.658
+Mormal	59_14	Mormal	750306.1257	7007667.74	3.703299	50.165151	158.2	plateau	1.8	69.2	0.5	0.8	5.1	regular	adult stand	relascope	3	0	70	1549.3	160.3	4.732
+Mormal	59_15	Mormal	749925.3736	7008038.61	3.698022	50.168512	155	plateau	1.6	105.5	-0.1	-0.1	8.6	regular	young stand	relascope	1	0	0	1955.3	38.7	4.443
+Mormal	59_16	Mormal	749730.8156	7007922.909	3.695287	50.167488	162	plateau	1.6	94.1	0.1	0.1	7.8	regular	pole stand	relascope	3	0	30	1885.8	138.6	4.735
+Mormal	59_18	Mormal	747974.8636	7010616.54	3.671059	50.191812	154.7	gentle slope	3	50.9	0.7	2.1	6.4	regular	pole stand	relascope	9	0	17	857.1	235.3	4.364
+Mormal	59_19	Mormal	748494.0021	7010027.823	3.678249	50.186486	152.6	gentle slope	2.1	12.5	1	2.1	8	regular	adult stand	relascope	3	0	0	966.7	135.6	4.763
+Mormal	59_20	Mormal	748691.8138	7009608.612	3.680965	50.182707	157.3	plateau	0.8	79.5	0.3	0.2	8.5	regular	adult stand	relascope	5	0	7	1158.5	256.9	4.7
+Mormal	59_21	Mormal	749220.6267	7009828.949	3.688387	50.184644	154.6	gentle slope	1.6	216.5	-1	-1.6	8.5	regular	saplings	relascope	5	0	25	1669.7	48.1	4.57
+Mormal	59_22	Mormal	752174.9558	7009534.744	3.729665	50.181764	170.4	plateau	1	345.8	0.7	0.7	5.7	regular	adult stand	relascope	17	0	15	363.7	372.7	4.371
+Mormal	59_23	Mormal	752752.6756	7008972.199	3.737671	50.176664	166.7	plateau	2.5	158.2	-0.8	-2	6.4	irregular	old stand	relascope	5	0	25	1056.2	165.9	4.585
+Mormal	59_26	Mormal	750574.5454	7009563.22	3.707288	50.18215	156.6	plateau	0.9	105.4	-0.1	-0.1	8	regular	young stand	relascope	7	0	2	1186.2	158.5	4.498
+Mormal	59_27	Mormal	748337.0618	7008685.241	3.675893	50.174442	155.5	plateau	2.5	81.3	0.3	0.7	6.8	regular	old stand	relascope	12	0	60	720.2	212	4.435
+Mormal	59_28	Mormal	748523.6074	7008296.575	3.678455	50.170938	159.2	plateau	2	70.3	0.4	0.9	7.5	regular	adult stand	relascope	19	0	60	770.9	275.6	4.33
+Mormal	59_29	Mormal	749962.1441	7005957.486	3.698278	50.149821	166.1	plateau	1.9	152.9	-0.7	-1.4	8.9	regular	adult stand	relascope	4	0	15	114.8	98.7	4.618
+Mormal	59_30	Mormal	749790.4293	7006224.921	3.695911	50.152236	165.5	gentle slope	1.6	352	0.7	1.2	7.6	irregular	irregular	relascope	5	0	20	429.4	27.6	4.319
+Mormal	59_31	Mormal	751468.2746	7007657.089	3.719544	50.164961	148.3	plateau	1.3	12.3	1	1.3	7.8	irregular	irregular	relascope	3	0	7	1079.6	176.8	4.725
+Mormal	59_32	Mormal	756180.7393	7017454.821	3.786786	50.252534	160.7	gentle slope	2	30.8	0.9	1.8	7.2	regular	adult stand	relascope	6	0	0	473.2	302.2	4.25
+Mormal	59_33	Mormal	756469.3888	7017110.444	3.79078	50.249416	161.3	gentle slope	0.5	206.6	-1	-0.5	8.3	regular	old stand	relascope	4	0	50	922.5	263.6	4.46
+Mormal	59_34	Mormal	756259.6925	7017980.944	3.787965	50.257251	151.7	plateau	3.3	266.8	-0.5	-1.6	7.1	irregular	old stand	relascope	4	0	0	113	93	4.228
+Mormal	59_36	Mormal	756458.6806	7017604.833	3.790699	50.253856	159.9	gentle slope	2.3	273.2	-0.4	-1	7.7	regular	young stand	relascope	25	0	50	444.3	282.5	4.539
+Mormal	59_37	Mormal	755455.4341	7016903.272	3.776553	50.247646	159.6	plateau	0.2	90	0.2	0	7.8	regular	thicket	stem counting	3	0	50	694.5	261.2	4.684
+Mormal	59_45	Mormal	753415.4727	7013851.394	3.747584	50.22042	157.5	plateau	2.1	228.8	-0.9	-1.9	7.7	regular	young stand	relascope	2	0	15	1042.7	190.7	4.637
+Mormal	59_46	Mormal	754257.0912	7013502.836	3.759316	50.217219	165.4	plateau	0.2	341.6	0.6	0.1	8.8	regular	pole stand	relascope	5	0	40	132.2	250.5	4.543
+Mormal	59_48	Mormal	748384.7467	7005883.686	3.676225	50.149281	161.1	plateau	1.4	288.4	-0.2	-0.3	7.1	regular	young stand	relascope	10	0	40	560.1	201	3.87
+Mormal	59_49	Mormal	748275.7947	7006718.953	3.674802	50.15679	157	gentle slope	3.4	200.2	-1	-3.4	6.2	regular	adult stand	relascope	2	0	40	453.7	57	4.379
+Mormal	59_50	Mormal	755626.9114	7015291.844	3.778732	50.233162	145.6	gentle slope	1.6	6.7	1	1.6	9.6	irregular	old stand	relascope	5	0	20	1363.6	157.1	4.455
+Mormal	59_51	Mormal	756365.5304	7014838.674	3.789008	50.229027	141.7	gentle slope	2.5	14.3	1	2.5	6.7	regular	pole stand	relascope	40	0	5	538.5	233.8	4.352
+Mormal	59_56	Mormal	758471.078	7016366.212	3.818701	50.24255	163.2	plateau	1.3	278.5	-0.3	-0.4	6.5	regular	pole stand	relascope	3	0	42	325.6	191	4.469
+Mormal	59_57	Mormal	757116.6579	7016903.474	3.799814	50.247499	157	plateau	1.1	310.8	0.2	0.2	6.2	regular	adult stand	relascope	7	0	5	1106.9	212.5	4.779
+Mormal	59_58	Mormal	752529.9666	7012627.703	3.735032	50.209507	161.4	plateau	0.3	78.7	0.3	0.1	6.9	regular	adult stand	relascope	5	0	10	1323.7	159.6	4.604
+Mormal	59_07	Mormal	751329.9105	7011612.142	3.718112	50.200487	155.6	plateau	2.8	221.6	-0.9	-2.6	8.3	open	open	open	2	0	0	28	58.8	6.459
+Mormal	59_39	Mormal	749717.6017	7012292.596	3.695641	50.206727	148.9	slight depression	0.5	153.4	-0.7	-0.4	7.9	regular	young stand	relascope	3	0	5	796.2	27	4.386
+Mormal	59_40	Mormal	750008.3558	7012121.576	3.699688	50.205168	153.4	plateau	1.5	7.2	1	1.5	8	regular	adult stand	relascope	3	0	40	467	185.4	4.701
+Mormal	59_41	Mormal	751461.6304	7013949.73	3.720253	50.221466	154.5	plateau	0.8	118	-0.3	-0.2	5.9	irregular	old stand	relascope	13	0	10	840.7	21.9	4.464
+Mormal	59_42	Mormal	752256.6615	7014135.74	3.731404	50.223071	158.2	gentle slope	1.7	133	-0.5	-0.9	6.9	regular	pole stand	relascope	12	0	10	1649.4	130.4	4.835
+Mormal	59_43	Mormal	751949.4802	7014690.554	3.727176	50.228077999999996	158.3	plateau	0.1	270	-0.5	-0.1	7.6	regular	thicket	relascope	3	0	45	1200.6	462.8	4.333
+Mormal	59_44	Mormal	753762.4185	7013887.424	3.752445	50.220714	164.3	plateau	0.7	270	-0.5	-0.3	8.9	regular	pole stand	relascope	3	0	55	751.8	339.1	4.328
+Mormal	59_47	Mormal	747973.5885	7006288.072	3.670527	50.152944	159	plateau	3.2	186.9	-1	-3.1	6.8	regular	thicket	stem counting	15	0	70	337.4	74	3.822
+Mormal	59_52	Mormal	756442.1115	7015042.117	3.790108	50.230847	141.2	plateau	1.5	153.4	-0.7	-1.1	7.8	regular	saplings	relascope	18	0	15	649.4	225.7	4.587
+Mormal	59_53	Mormal	757671.9951	7016230.694	3.807494	50.241408	155.8	gentle slope	2.3	168.7	-0.9	-2.1	7.4	regular	saplings	relascope	3	0	50	502.2	169.8	4.363
+Mormal	59_55	Mormal	757567.7531	7015962.552	3.805996	50.23901	143.6	slight depression	1.2	195.5	-1	-1.2	9.2	regular	young stand	relascope	5	0	0	352.6	3.2	4.886
+Mormal	59_59	Mormal	752164.3584	7012687.75	3.729925	50.210077	158.9	plateau	1.6	348.3	0.7	1.1	7.8	regular	adult stand	relascope	7	0	0	1070.7	102.9	4.282
+Mormal	59_60	Mormal	753622.0473	7011475.865	3.750159	50.199072	168.6	plateau	1.9	150.7	-0.7	-1.3	6.6	irregular	old stand	relascope	6	0	20	1240.2	210.6	4.449
+Mormal	59_38	Mormal	751880.4057	7011876.968	3.725847	50.20282	168.8	plateau	1	111.2	-0.2	-0.2	5.7	regular	adult stand	relascope	3	0	10	363.7	176.6	4.035
+Mormal	59_54	Mormal	757484.8487	7016401.14	3.804898	50.242955	160.7	plateau	0.5	180	-1	-0.4	8	open	open	open	5	0	0	747.1	201	5.124

@@ -7,16 +7,13 @@ format:
     embed-resources: true
     toc: true
     code-fold: true
-    cache: true
-  docx: default
 bibliography: references.bib
-csl: mee.csl
 ---
 
 
 Dear Editors and editorial board members,
 
-We would like to submit an original research article currently entitled “*Using Discrete Fourier Transform to play the partition of temperature harmonics and assess microclimatic modulations*” for consideration in *Methods in Ecology and Evolution*. This is a first submission and we confirm that the submitted manuscript is not under consideration elsewhere.
+We would like to submit an original research article currently entitled “*Using Discrete Fourier Transform to play the partition of temperature harmonics and assess microclimatic modulations*” for consideration in *Agricultural and Forest Meteorology*. This is a first submission and we confirm that the submitted manuscript is not under consideration elsewhere.
 
 Existing metrics for quantifying how forest canopies buffer microclimatic temperature fluctuations, namely the offset and the slope-equilibrium approaches, capture buffering at a single, pre-defined timescale and cannot disentangle daily, seasonal and interannual signals within the same temperature time series. To solve this limitation, we implemented the Discrete Fourier Transform (DFT) for microclimate ecology, decomposing paired microclimate–macroclimate temperature time series into their constituent harmonics (amplitude and phase per frequency) so that the buffering effect of temperatures under forest canopies, for instance, can be quantified independently across timescales.
 
@@ -24,7 +21,7 @@ We illustrate the approach with two case studies using subcanopy air and soil te
 
 By resolving microclimate buffering across multiple timescales within a single, noise-robust framework, and by enabling principled debiasing of macroclimate reference products, the Fourier Transform offers a versatile addition to the microclimate ecologist's toolkit, complementing rather than replacing the existing offset and slope-equilibrium approaches. We accompany the method with an open-source R package (*microclimr*) to support its wider adoption.
 
-We believe this manuscript would be a valuable contribution to *Methods in Ecology and Evolution* and would attract a wide readership, as it introduces a new, physically grounded method to a fast-growing field, microclimate ecology and biogeography, while remaining fully compatible with the tools currently used in the discipline. Our approach is also timely, as it responds to the community's need for methods able to jointly handle multiple timescales and to correct known biases in widely used macroclimate reanalysis products such as ERA5-Land at the global extent or E-OBS for Europe.
+We believe this manuscript would be a valuable contribution to *Agricultural and Forest Meteorology* and would attract a wide readership, as it introduces a new, physically grounded method to a fast-growing field, microclimate ecology and biogeography, while remaining fully compatible with the tools currently used in the discipline. Our approach is also timely, as it responds to the community's need for methods able to jointly handle multiple timescales and to correct known biases in widely used macroclimate reanalysis products such as ERA5-Land at the global extent or E-OBS for Europe.
 
 We have no conflicts of interest to disclose. Thank you for your consideration.
 

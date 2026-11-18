@@ -9,7 +9,7 @@ format:
     code-fold: true
     cache: true
 bibliography: references.bib
-csl: mee.csl
+csl: agricultural-and-forest-meteorology.csl
 ---
 
 ```{r set}
@@ -44,7 +44,6 @@ temperatures <- list(
 ) %>%
   lapply(get_dataframe_by_doi, server = "data.indores.fr") %>%
   bind_rows(.id = "site")
-write_tsv(temperatures, "data/hobo.tsv")
 lidar <- list(
   Aigoual = "10.48579/PRO/XH62TC/P4F7FP",
   Blois = "10.48579/PRO/XH62TC/OI6WQU",
@@ -52,7 +51,6 @@ lidar <- list(
 ) %>%
   lapply(get_dataframe_by_doi, server = "data.indores.fr") %>%
   bind_rows(.id = "site")
-write_tsv(lidar, "data/lidar.tsv")
 lidar_sub <- lidar %>%
   filter(buffer == 5) %>%
   rename(plot = idplot) %>%
@@ -62,7 +60,7 @@ era <- read_tsv("data/era.tsv") %>%
   mutate(datetime = as_datetime(time)) %>%
   rename(era = tas) %>%
   select(site, datetime, era)
-onf <- list.files("data/methor_data_onf/", pattern = ".txt", full.names = TRUE) %>%
+onf <- list.files("data/methor_data_onf/", pattern = ".txt.gz", full.names = TRUE) %>%
   vroom::vroom(col_names = read_tsv("data/methor_data_onf/MetHor2018.org") %>%
     names()) %>%
   select(
@@ -99,12 +97,12 @@ data <- temperatures %>%
   left_join(era) %>%
   left_join(onf) %>%
   left_join(lidar_sub)
-write_tsv(data, "data/data.tsv")
+write_tsv(data, "data/data.tsv.gz")
 ```
 
 ```{r decomposition}
 #| eval: false
-data <- read_tsv("data/data.tsv")
+data <- read_tsv("data/data.tsv.gz")
 fc <- data %>%
   filter(month(datetime) %in% 5:9) %>%
   gather(
@@ -125,10 +123,10 @@ fc <- data %>%
     step = "3 days"
   )) %>%
   unnest(fft)
-write_tsv(fc, "data/decomposition.tsv")
+write_tsv(fc, "data/decomposition.tsv.xz")
 ```
 
-**Aim**: *Methods in Ecology and Evolution.*
+**Aim**: *Agricultural and Forest Meteorology*
 
 **Cover letter**: [link](https://sylvainschmitt.github.io/fourier/cover_letter.html)
 
@@ -139,21 +137,31 @@ write_tsv(fc, "data/decomposition.tsv")
 3 - UMR CNRS 7352 "Laboratoire Amiénois de Mathématique Fondamentale et Appliquée" (LAMFA), Université de Picardie Jules Verne, 33 rue St-Leu, 80000 Amiens, France\
 4 - UMR CNRS 7058 “Ecologie et Dynamique des Systèmes Anthropisés” (EDYSAN), Université de Picardie Jules Verne, 1 rue des Louvels, 80000 Amiens, France
 
+**Corresponding author**: Sylvain Schmitt
+
+## Highlights
+
+- Discrete Fourier Transform quantifies canopy buffering at any timescale at once
+- Paired micro- and macroclimate series become amplitude and phase spectra
+- Daily, seasonal and interannual buffering separated within one temperature record
+- Spectral debiasing of ERA5-Land corrects mean bias and damped short-term variability
+- Noise-robust framework complements offset and slope-equilibrium microclimate metrics
+
 ## Abstract
 
-1.  Quantifying how forest canopies buffer temperature fluctuations in the understorey is central to our understanding of biodiversity responses to anthropogenic climate change. However, existing metrics (i.e., the offset and slope-equilibrium approaches linking microclimate to macroclimate) capture the buffering effect of the canopy at a single, pre-defined timescale and cannot separate daily from seasonal and interannual signals within the same temperature time series.
-
-2.  We introduce the Discrete Fourier Transform (DFT) as a tool for decomposing paired microclimate–macroclimate temperature time series into a harmonic spectrum with amplitude and phase per frequency, so that canopy buffering can be decomposed and quantified, all at once, for any timescale. We illustrate the approach with two case studies using subcanopy air and soil temperature records paired with weather-station and ERA5-Land reanalysis reference data.
-
-3.  In the first case study, spectral decomposition isolated the dominant 24-hour cycle and showed that forest canopies buffered daily air-temperature fluctuations by 75.9–90.3% across sites, with forest soils buffering mean temperature even more strongly than air near the ground. In the second case study, the same framework was used to debias ERA5-Land reanalysis data against a local and ground-truth reference weather station by comparing amplitude spectra across frequencies, correcting both the overestimation of mean temperature and the underestimation of short-term variability.
-
-4.  By resolving canopy buffering across multiple timescales within a single, noise-robust framework and by enabling principled debiasing of macroclimate reference products, the DFT approach that we tailored to microclimatic time series offers a versatile addition to the microclimate ecologist's toolkit, complementing rather than replacing existing offset and slope-equilibrium approaches.
+Quantifying how forest canopies buffer temperature fluctuations in the understorey is central to our understanding of biodiversity responses to anthropogenic climate change. However, existing metrics (i.e., the offset and slope-equilibrium approaches linking microclimate to macroclimate) capture the buffering effect of the canopy at a single, pre-defined timescale and cannot separate daily from seasonal and interannual signals within the same temperature time series. We introduce the Discrete Fourier Transform (DFT) as a tool for decomposing paired microclimate–macroclimate temperature time series into a harmonic spectrum with amplitude and phase per frequency, so that canopy buffering can be decomposed and quantified, all at once, for any timescale. We illustrate the approach with two case studies using subcanopy air and soil temperature records paired with weather-station and ERA5-Land reanalysis reference data. In the first case study, spectral decomposition isolated the dominant 24-hour cycle and showed that forest canopies buffered daily air-temperature fluctuations by 75.9–90.3% across sites, with forest soils buffering mean temperature even more strongly than air near the ground. In the second case study, the same framework was used to debias ERA5-Land reanalysis data against a local and ground-truth reference weather station by comparing amplitude spectra across frequencies, correcting both the overestimation of mean temperature and the underestimation of short-term variability. By resolving canopy buffering across multiple timescales within a single, noise-robust framework and by enabling principled debiasing of macroclimate reference products, the DFT approach that we tailored to microclimatic time series offers a versatile addition to the microclimate ecologist's toolkit, complementing rather than replacing existing offset and slope-equilibrium approaches.
 
 ### Keywords
 
 amplitude spectrum; dampening effect; forest ecosystems; macroclimate debiasing; microclimate buffering; periodic signal; temperature time series; vegetation cover
 
-## Introduction
+## Graphical abstract
+
+```{r graph_abstract}
+knitr::include_graphics("figs/fourier.png")
+```
+
+## 1. Introduction
 
 Microclimate ecology and biogeography has recently emerged as a burgeoning research field to better understand biodiversity distribution and redistribution under climate change [@kemppinen2024]. Historically, and prior to Rudolf Geiger (1894-1981) who first used the term microclimate [@geiger1965], the idea that climate can be modulated by vegetation cover was introduced by physicists, biogeographers and foresters such as Alexander von Humboldt (1769-1859), Louis Joseph Gay-Lussac (1778-1850), Antoine César Becquerel (1788-1878) and Jean-Baptiste Boussingault (1801-1887) [see @becquerel1865]. At that time, the socio-ecological context was very different because of the impact of massive deforestation on air quality and climate, such as in the Americas, after the arrival of European settlers.
 
@@ -165,7 +173,7 @@ Each harmonic corresponds to a wave (cyclic) signal with its own range of variat
 
 To illustrate the relevance of the DFT for the field of microclimate ecology and biogeography, we present two case studies. First, we used the DFT to assess the buffering capacity of temperate deciduous forest ecosystems during the vegetation season. We rely on an existing dataset of subcanopy air and soil temperature time series from a network of microclimate loggers installed at 1-m height aboveground and 8-cm depth belowground, respectively, and beneath the canopy of three state forests in France [@gril2023; @gril2024; @gril2025]. This dataset is paired with a set of time series representing the reference temperature (macroclimate) extracted from either the ERA5-Land global reanalysis [@muñoz-sabater2021] or three reference and ground-truth weather stations located outside but nearby the three studied state forests. Second, because the choice of the macroclimatic reference matters to assess microclimatic modulations, we apply the DFT to debias a temperature time series from the ERA5-Land reanalysis at a local site where a paired time series from a ground-truth weather station is available so that this debiasing procedure can be implemented on another location where weather station data are unavailable.
 
-## The method: a spectral decomposition of temperature time series via the Discrete Fourier Transform (DFT)
+## 2. The method: a spectral decomposition of temperature time series via the Discrete Fourier Transform (DFT)
 
 Temperature records measured continuously over time --- whether by a sensor inside a plastic-coated microclimate logger installed in a closed-canopy forest or by a thermocouple inside a standardized weather station in an open field --- are producing inherently periodic signals. Daily heating and cooling swings, seasonal rhythms, and longer climatic cycles all superimpose upon one another to produce the complex thermal fluctuations that drive biodiversity distribution and redistribution under climate change. To disentangle these overlapping periodic signals and quantify how the forest modifies each of them independently, we propose to use the DFT to decompose temperature time series.
 
@@ -189,7 +197,7 @@ To illustrate what each mode contributes, we reconstructed two time series over 
 Sys.setlocale("LC_TIME", "en_US.UTF-8") %>%
   invisible()
 cols <- c("darkblue", "firebrick", "darkgrey")
-data <- "data/data.tsv" %>%
+data <- "data/data.tsv.gz" %>%
   read_tsv() %>%
   filter(
     year(datetime) == 2023,
@@ -320,7 +328,7 @@ cowplot::save_plot("figs/fourier.png",
 g
 ```
 
-## Study sites and data
+## 3. Study sites and data
 
 To illustrate our first case study, involving the assessment of the buffering effect of temperatures under forest canopies, we used an existing dataset of air and soil temperature time series recorded beneath the canopy of three state forests in France [@gril2024; @gril2025] (@fig-sites): Aigoual, Blois and Mormal. This dataset originates from a former project entitled "*Impacts of Microclimatic Processes on foRest bIodiversity redistributioN under macroclimaTe warming*" (IMPRINT, @lenoir2024). At the onset of the IMPRINT project, two microclimate loggers were installed at the center of each of 60 plots per state forest (i.e., 180 plots and 360 loggers in total): (1) one Onset® HOBO® Pendant data logger UA-001-64 hanged on the north side of a tree trunk at 1-m height above the ground, recording subcanopy air temperature every hour, and (2) one Onset® HOBO® Pendant data logger UA-001-08 buried at 8 cm depth in the topsoil layer, recording soil temperature every 2 hours. Both air and soil temperature sensors have a manufacturer-reported accuracy of ±0.53°C from 0 to 50°C. Air sensors were shielded within homemade 10 × 15 cm white PVC tubes to minimize overheating effects due to direct solar radiation and upheld on the central tree by spring wires to adjust to tree radial growth [@gril2023; @zellweger2019]. Soil sensors were attached by a wire to the root buttress of the same central tree to avoid losses resulting from wildlife activity. Subcanopy air and soil temperature time series range from: July 31st 2020 to September 17th 2023 at Aigoual; July 11th 2020 to August 28th 2023 at Blois; and August 3rd 2020 to October 23rd 2023 at Mormal. Note that the raw time series may have holes (missing data) due to loggers' malfunction or empty batteries.
 
@@ -375,7 +383,7 @@ fr <- ggplot(france, aes(x = long, y = lat)) +
   )
 si <- read_tsv("data/plots.tsv") %>%
   rename(plot = idplot) %>%
-  left_join(read_tsv("data/data.tsv") %>%
+  left_join(read_tsv("data/data.tsv.gz") %>%
     filter(
       position == "air",
       datetime == as_datetime("2023-08-11 12:00:00")
@@ -453,7 +461,7 @@ cowplot::save_plot("figs/sites.png",
 g
 ```
 
-## Case study 1 - Forest microclimate assessment
+## 4. Case study 1 - Forest microclimate assessment
 
 We first decomposed the macroclimate temperature time series for the Aigoual, Blois and Mormal forest separately and for each of the two macroclimate reference products available: the local ONF reference weather station and the ERA5-Land reanalysis. We then decomposed the microclimate temperature time series from each HOBO sensor (air and soil) at each plot location in the focal forest. Our analysis focused on the leaf-on season, when the buffering effect of the canopy in temperate deciduous forests is the most pronounced, namely from May 1st to September 30th of each year during the period 2020-2023. For each temperature time series, we ran the DFT decomposition with a sliding window of five days and a shift of three days to ensure an overlap of 2 days between each consecutive 5-days decomposition, analysing only complete time series, i.e., without any missing temperature measurement over the five consecutive days. Based on this spectral decomposition, we created amplitude spectra (see @fig-proj for an explanation) which we aggregated per combination of forest (Aigoual, Blois, Mormal) and type of temperature time series, distinguishing between macroclimate (ONF weather station and ERA5-Land reanalysis) and microclimate (air and soil) (see @fig-ps).
 
@@ -470,7 +478,7 @@ By relating the mean value of the 24-h amplitude ratio to the PAI value of each 
 #| fig-width: 10
 #| fig-height: 8
 #| fig-cap: "Amplitude spectrum for air and soil temperature time series during the vegetation season from 2020 to 2023, separately for two different macroclimate references (the ERA5-Land global reanalysis vs. local ONF weather stations) in case of air temperatures, separately for air and soil temperatures in case of forest microclimate conditions (HOBO sensors) and separately for each of the three studied state forests: Aigoual, Blois and Mormal."
-t <- "data/decomposition.tsv" %>%
+t <- "data/decomposition.tsv.xz" %>%
   read_tsv() %>%
   group_by(source, site, position, frequency, period) %>%
   summarise(
@@ -528,7 +536,7 @@ g
 #| fig-width: 10
 #| fig-height: 8
 #| fig-cap: "Mean temperature ratio vs. 24-h power ratio between microclimate (numerator) and macroclimate (denominator) conditions. Microclimate conditions were recorded inside forest plots equipped with HOBO sensors for air (1-m height) and soil (8-cm depth) temperatures. Macroclimate conditions refer to air temperature measured by local ONF weather stations located nearby each of the three studied state forests: Aigoual, Blois and Mormal. The point represents the median, the thick line the 50 percent distribution and the thin line the 90 percent distribution. For results at the sensor level focusing on subcanopy air temperature across the three forests, refer to Figure S2."
-g <- read_tsv("data/decomposition.tsv") %>%
+g <- read_tsv("data/decomposition.tsv.xz") %>%
   filter(source != "era") %>%
   filter(period %in% c(0, 12)) %>%
   select(-amplitude, -phase, -frequency) %>%
@@ -588,7 +596,7 @@ cowplot::save_plot("figs/buffer2.png",
 g
 ```
 
-## Case study 2 - Macroclimate debiasing
+## 5. Case study 2 - Macroclimate debiasing
 
 The first case study and the existing scientific literature [e.g., @hes2025] clearly illustrate how the magnitude of the buffering effect of temperatures imposed by forest canopies can be affected by the type of macroclimate reference one uses (@fig-ps and Figs. S1-S2). Raw data from standard weather station records, such as the ONF ones we used here, are not always available in the direct vicinity of the study site of interest, and when available, raw time series can be incomplete or not correctly harmonized over time when measurement methods and tools have changed. Conversely, global climate reanalyses, such as ERA5-Land [@muñoz-sabater2021], are available worldwide, cover a long time span, and most importantly are harmonized across space and over time. However, global reanalyses also include biases, such as overestimation of mean temperature and underestimation of fine temporal variations due to the reanalysis smoothing effect. In this case, the DFT decomposition can also help us combine the strengths of both local weather station data and reanalysis data, enabling us to obtain a more qualitative, debiased reference macroclimate product for use in microclimate studies (@fig-debias).
 
@@ -602,7 +610,7 @@ Typically, microclimate studies may lack a nearby weather station to use as a re
 #| fig-width: 10
 #| fig-height: 8
 cols <- c("#0F6E56", "#BA7517")
-data <- "data/data.tsv" %>%
+data <- "data/data.tsv.gz" %>%
   read_tsv() %>%
   filter(
     year(datetime) == 2023,
@@ -681,7 +689,7 @@ g_cor <- list(era = fc_e, onf = fc_o) %>%
     axis.text.y = element_text(size = 12),
     axis.title = element_text(size = 14, face = "bold")
   )
-svg_raster <- rsvg::rsvg_nativeraster("data/debiasing_scheme_v2.svg")
+svg_raster <- rsvg::rsvg_nativeraster("figs/debiasing_scheme_v2.svg")
 g_scheme <- grid::rasterGrob(svg_raster, interpolate = TRUE)
 g <- cowplot::plot_grid(g_scheme, g_data, g_fc, g_cor)
 cowplot::save_plot("figs/bias.png",
@@ -694,23 +702,23 @@ cowplot::save_plot("figs/bias.png",
 g
 ```
 
-## Discussion
+## 6. Discussion
 
 By applying the DFT to assess the buffering effect of temperatures under forest canopies as well as to locally debias ERA5-Land reanalysis time series, we demonstrate that the DFT is a powerful and largely untapped mathematical tool for direct applications in microclimate ecology and biogeography [@kemppinen2024], extending beyond the offset and slope-equilibrium approaches traditionally used to quantify the buffering of temperatures under canopies [@defrenne2019]. By decomposing temperature time series into their constituent frequencies, the DFT allows to capture and directly quantify microclimate dynamics, in terms of both buffering and amplifying effects (i.e., case study 1) (@fig-ps, @fig-ratios and Fig. S1), across multiple time scales (i.e., frequencies), all at once, instead of having to decide on one particular time scale to analyse the signal. Beyond assessing microclimate modulations (buffering vs amplifying effect), we further demonstrate that the same framework can be used to debias macroclimatic time series from the ERA5-Land reanalysis typically used as reference products (i.e., case study 2) (@fig-debias) against local ground-truth observations. The DFT is also inherently robust to sensor noise, providing the opportunity to remove the background noise by focusing on the most relevant periodic signal of interest, while isolating long-term trends (@fig-proj). In general, the DFT yields a novel, physically grounded metric of microclimate modulations based on the amplitude spectrum variance decomposition. Together, our findings position the DFT as a versatile and complementary, rather than competing, addition to the microclimate ecologist's toolkit.
 
-### Amplitude spectrum: the 24-h amplitude orchestrates its harmonics
+### 6.1 Amplitude spectrum: the 24-h amplitude orchestrates its harmonics
 
 The most relevant addition of the DFT approach in microclimate ecology and biogeography, compared with the offset [@deFreitas1995] and slope-equilibrium [@gril2023] approaches that are traditionally used, is to make use of the finest temporal resolution available in the raw microclimatic time series and keep all of this information without the need to aggregate it by deciding beforehand on a given summary statistic (maximum, minimum or mean temperature) computed at a given resolution or period (daily, monthly, yearly). Instead, as we have demonstrated in our case studies and as illustrated in @fig-proj, the DFT decomposition of the raw temperature time series allows us to generate an amplitude spectrum that provides the amplitude of temperature fluctuations, a key summary statistics for assessing microclimate dynamics (buffering vs. amplifying effects), at all periods (i.e., frequencies), all at once. Based on the amplitude spectrum, it is then possible to identify the maximum amplitude value at a given period (e.g., the 24-h amplitude in case study 1) and isolate it together with its harmonics to reconstruct a detrended cyclic signal at very fine temporal resolution without any remaining noise (@fig-proj). On contrary, previous studies have almost systematically made oriented choices beforehand to aggregate the raw hourly (or even sub-hourly for TMS4 loggers; @wild2019) microclimate time series into daily [@defrenne2019], monthly [@hes2025], seasonal or even yearly [@gril2025] summary statistics, such as daily/monthly maximum and minimum temperatures for the offset approach [@defrenne2019; @hes2025] or seasonal/yearly aggregates of the slope coefficient linking microclimate to macroclimate as per the slope-equilibrium approach [@gril2023; @gril2025]. Rare are the studies that have combined more than two temporal resolutions [@hes2025] or operated directly at sub-daily resolution [but see @pinheiro2011]. We believe that the DFT allows a much refined analysis of microclimate time series as it directly integrates the frequency effect to obtain a full spectral decomposition of the signal, depending on how the sliding time window of the analysis is defined (discussed below). Moreover, the DFT decomposition is not in opposition to the offset and slope-equilibrium approaches: once the amplitude spectrum is built for each frequency/period, the metric to assess microclimatic modulations (buffering vs. amplifying effects) still needs to be defined and computed, for instance using a ratio of amplitude values between microclimate and macroclimate, as we did in study case 1 (@fig-ratios), though other metrics could be considered as well.
 
-### Debiasing macroclimate reanalysis
+### 6.2 Debiasing macroclimate reanalysis
 
 Beyond using the DFT for assessing microclimate modulations, as shown in study case 1, a further, less commonly discussed problem in microclimatology, and in applied climatology more broadly, is how to obtain a robust and accurate reference macroclimate product against which to estimate microclimate modulations. For instance, @hes2025 corrected ERA5-Land reanalysis products in French Guiana against ground-truth observations from a local weather station belonging to the Météo France network using a mean-and-variance correction, requiring separate corrections for each frequency in the temporal signal (hourly and monthly). We believe the DFT offers a clear advantage here for debiasing climate reanalysis products, such as ERA5-Land at global extent [@muñoz-sabater2021] or E-OBS for Europe [@copernicusclimatechangeservice2020], against local field-based weather station data, as demonstrated in study case 2: it provides a fast, simple correction that remains robust across multiple frequencies, again all at once. This approach is already used in several other domains: for example to correct CMIP6 simulations in climatology [@kusumastuti2022], to improve spatial downscaling of climatologies [@utami2024], or in hydrology [@kendall2007], and we encourage its wider adoption in microclimate ecology and biogeography at large.
 
-### Detrending and cleaning of microclimate signal
+### 6.3 Detrending and cleaning of microclimate signal
 
 In addition, the DFT can directly identify and isolate the background noise in a given time series while the offset and slope-equilibrium approaches are highly sensitive to outliers arising from sensor malfunction, often requiring a preliminary data-cleaning step to remove such artefacts. For instance, @hes2025 discarded points falling more than five standard deviations from the mean over a monthly rolling window. In the temperature time series we displayed in @fig-proj, such noise is clearly visible at the start of August 9th 2023, when a malfunctioning microclimate sensor produces a significant temperature drop relative to the macroclimate signal. Interestingly, this artefact is removed when isolating the overall trend or the daily fluctuation signal, since such small-scale variations are only reflected towards the high-frequency (low-period) section of the amplitude spectrum gradient, making the DFT robust to this type of noise that is not present in the lower-frequency (higher-period) section of the amplitude spectrum gradient, on which we relied on in our subsequent analyses.
 
-### Perspectives
+### 6.4 Perspectives
 
 We believe the DFT approach holds strong potential for microclimate ecology and biogeography. Future directions include: (i) exploring higher-order harmonics; (ii) benchmarking the DFT against alternative approaches traditionally used to assess microclimate modulations, such as the offset and slope-equilibrium approaches; (iii) analysing phase-shift in microclimate dynamics relative to macroclimate dynamics; and (iv) making the DFT approach more accessible to ecologists through open-source tools.
 
@@ -722,17 +730,25 @@ Beyond the extraction of multiple amplitude values to assess microclimate modula
 
 Finally, we believe that wider adoption of the DFT approach in microclimate ecology and biogeography will require making the method accessible through open-source tools, such as an R package, or a Shiny App, a format increasingly favoured by ecologists [@lai2019]. This is currently a work under progress, with the active development of the R package *microclimr* and its associated application *microclimapp* (Schmitt et al., in prep), which also underlies the analyses presented in this paper (see [Data availability](#data-availability)).
 
-### Conclusion
+### 6.5 Conclusion
 
 Taken together, our results show that the DFT is not merely an alternative to the existing toolbox of the microclimate ecologist, but a methodological advance for the burgeoning field of microclimate ecology and biogeography. By resolving the analysis of microclimate modulations across multiple frequencies all at once, by providing a noise-robust framework, and by opening a path towards principled macroclimate debiasing, the DFT decomposition addresses several limitations of the current tools available for microclimate ecologists while remaining fully compatible with them, thus enriching rather than cluttering the existing toolbox. As microclimate data continues to be collected by sensor networks around the world, we believe that spectral analyses, such as the one presented here, and their future implementation in accessible, open-source tools, will become an increasingly valuable part of the microclimate ecologist's toolkit.
 
+## Funding
+
+J.L. acknowledges funding from the Centre National de la Recherche Scientifique (CNRS), under the framework of the Mission pour les Initiatives Transverses et Interdisciplinaires (MITI, Défi INFINITI 2018: MORFO project) and the Agence Nationale de la Recherche (ANR), under the framework of the young investigators' funding scheme (JCJC Grant N°ANR-19-CE32-0005: IMPRINT project). E.H. and J.L. has received financial support from the CNRS through the MITI interdisciplinary programs (VERTU project). J.L. and S.S. consider this work as part of the MONITOR and MICROFOREST project referenced as ANR-24-PEFO-0003 and ANR-24-PEFO-0007, respectively, and belonging to the French research program FORESTT which received government funding managed by the ANR under the France 2030 program.
+
 ## Acknowledgements
 
-J.L. acknowledges funding from the Centre National de la Recherche Scientifique (CNRS), under the framework of the Mission pour les Initiatives Transverses et Interdisciplinaires (MITI, Défi INFINITI 2018: MORFO project) and the Agence Nationale de la Recherche (ANR), under the framework of the young investigators' funding scheme (JCJC Grant N°ANR-19-CE32-0005: IMPRINT project). E.H. and J.L. has received financial support from the CNRS through the MITI interdisciplinary programs (VERTU project). J.L. and S.S. consider this work as part of the MONITOR and MICROFOREST project referenced as ANR-24-PEFO-0003 and ANR-24-PEFO-0007, respectively, and belonging to the French research program FORESTT which received government funding managed by the ANR under the France 2030 program. The authors also acknowledge the thematic network FORTRAN (GDR 2199: <https://www.fortran.cnrs.fr/>), supported by the CNRS, which fostered discussions and cross-disciplinary research between two CNRS institutes: CNRS Mathematics jointly with CNRS Ecology & Environment. We thank the Office National des Forêts (ONF) and the RENECOFOR network for providing the weather station data used as macroclimate reference, and in particular Manuel Nicolas (head of the RENECOFOR network) and Sébastien Macé (in charge of the data, including the meteorological data) for their help.
+The authors also acknowledge the thematic network FORTRAN (GDR 2199: <https://www.fortran.cnrs.fr/>), supported by the CNRS, which fostered discussions and cross-disciplinary research between two CNRS institutes: CNRS Mathematics jointly with CNRS Ecology & Environment. We thank the Office National des Forêts (ONF) and the RENECOFOR network for providing the weather station data used as macroclimate reference, and in particular Manuel Nicolas (head of the RENECOFOR network) and Sébastien Macé (in charge of the data, including the meteorological data) for their help.
 
-## Data availability
+## Author contributions
 
-All code behind the analyses is available on GitHub at <https://github.com/sylvainschmitt/fourier>, and the associated data are archived on Zenodo (DOI: [10.5281/zenodo.24158748](https://doi.org/10.5281/zenodo.24158748)). Weather station data from the Office National des Forêts (ONF) are available upon request.
+Sylvain Schmitt, Erwan Hingant, and Jonathan Lenoir  conceived the ideas and designed methodology;  Jonathan Lenoir collected the data; Sylvain Schmitt analysed the data and led the writing of the manuscript. All authors contributed critically to the drafts and gave final approval for publication.
+
+## Code and data availability {#data-availability}
+
+All code and data behind the analyses are available on GitHub at <https://github.com/sylvainschmitt/fourier>, and the associated Zenodo archive (DOI: link).
 
 ## References
 
@@ -746,7 +762,7 @@ All code behind the analyses is available on GitHub at <https://github.com/sylva
 #| message: false
 #| warning: false
 #| fig-cap: "Distributions of 24-h amplitude ratio values (y-axis) between microclimate (i.e., either air or soil temperature in the forest understory) and the reference macroclimate (i.e., ambient-air temperature) for each forest plot location separately (x-axis) during the leaf-on vegetation season (May-September) and over the period 2020-2023. Results are displayed separately for the three studied state forests (Aigoual, Blois and Mormal) and for the two types of macroclimatic reference we used (ONF weather stations vs. ERA5-Land reanalysis) when computing the 24-h amplitude ratio. The 24-h amplitude values were obtained by running the Discrete Fourier Transform (DFT) decomposition along each temperature time series with a sliding window of 5 consecutive days with 2 days overlap, starting from May 1st of each year and ending in September 30th of each year (i.e., up to 50 24-h amplitude ratio values per year), for up to 4 consecutive years (2020, 2021, 2022, 2023). Each vertical bar shows the range of 24-h amplitude ratio per forest plot. Air and soil temperatures in the forest understory were recorded every hour and every two hours, respectively."
-buffers <- read_tsv("data/decomposition.tsv") %>%
+buffers <- read_tsv("data/decomposition.tsv.xz") %>%
   filter(period == 12) %>%
   select(source, site, plot, sensor, position, pai, power, datetime) %>%
   pivot_wider(names_from = source, values_from = power) %>%
@@ -787,7 +803,7 @@ buffers %>%
 #| fig-width: 10
 #| fig-height: 8
 #| fig-cap: "Mean temperature ratio vs. 24-h power ratio between microclimate (numerator) and macroclimate (denominator) conditions across forest plots for the three studied forests. Microclimate conditions were recorded inside forest plots equipped with HOBO sensors for air (1-m height) temperature. Macroclimate conditions refer to air temperature measured by local ONF weather stations located nearby each of the three studied state forests: Aigoual, Blois and Mormal. The point represents the median, the thick line the 50 percent distribution and the thin line the 90 percent distribution."
-g <- read_tsv("data/decomposition.tsv") %>%
+g <- read_tsv("data/decomposition.tsv.xz") %>%
   filter(source != "era") %>%
   filter(period %in% c(0, 12)) %>%
   select(-amplitude, -phase, -frequency) %>%

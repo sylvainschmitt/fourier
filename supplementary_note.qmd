@@ -7,11 +7,8 @@ format:
     embed-resources: true
     toc: true
     code-fold: true
-    cache: true
-  pdf: default
-  docx: default
 bibliography: references.bib
-csl: mee.csl
+csl: agricultural-and-forest-meteorology.csl
 ---
 
 # Fourier series {#sec:fourier_series}

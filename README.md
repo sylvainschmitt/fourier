@@ -1,4 +1,5 @@
 # Fourier
+[![DOI](https://zenodo.org/badge/1087187932.svg)](https://doi.org/10.5281/zenodo.24336064)
 
 Manuscript submitted to *Agricultural and Forest Meteorology* on the 26/11/18.
 
